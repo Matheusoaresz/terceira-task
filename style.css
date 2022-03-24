@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;600&display=swap');
+
+/*font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'PT Serif', serif;*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    background-color: #A68365;
+    color: white;
+}
+
+.logo{
+    position: absolute;
+    padding-left: 6px;
+    left: 30px;
+}
+
+
+.button-1{
+    padding: 10px;
+    background-color: #e0dbcc;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3;
+}
+
+.button-1:hover{
+    background-color: #978d74;
+}
+
+.menu{
+    font-family: 'Roboto', sans-serif;
+    padding-right: 20px;
+    padding-left: 120px;
+}
+
+.itens{
+    padding-right: 30px
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+   
+a:visited {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(235, 225, 225);
+}
+
+a:active {
+    color: rgb(78, 75, 75);
+}
+
+h1{
+    font-weight: 200;
+     font-family: 'PT Serif', serif;
+     text-align: center;
+     font-size: 50px;
+     padding-right: 400px;
+     padding-left: 280px;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px;
+    color: white;
+    background-color: black;
+}
+
+.line{
+    color: white;
+}
+
+.explorar{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 37px;
+    text-align: center;
+    display: flex;
+    padding-left: 716px;
+}
+
+.introducao{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding: 100px 4%;
+    font-family: roboto;
+    color: rgb(20,20,20);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #E5A25A;
+}
+.introducao:nth-of-type(2) h1{
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.introducao:nth-of-type(1){
+    background-image: url("museu.jpg");
+    color: white;
+    font-size: 60px;
+}
+
+
+.paragrafo-introducao{
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.7;
+}
+
+.principal{
+    padding-top: 0px;
+    
+}
+
+.images{
+    float: left;
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+.flip-container {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+  
+.flipper{
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-container:hover .flipper{
+	transform: rotateY(180deg);
+}
+
+.back{
+	transform: rotateY(180deg);
+}
+
+
+.text-monalisa{
+    position: absolute;
+    top: 1300px;
+    left: 550px;
+    padding: 20px;
+    padding-left: 120px;
+    padding-right: 30px;
+    font-size: 38px;
+    text-align: justify;
+    line-height: 1.7;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.line-rodape{
+    color: white;
+}
+
+
+.rodape{
+    padding-top: 700px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
